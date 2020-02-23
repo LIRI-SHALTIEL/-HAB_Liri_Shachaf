@@ -1,0 +1,74 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>כדור בורח</title>
+    <meta name="description" content="name of game" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="names" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="indextest.html">
+                <img id="logo" src="pictures/HABlogo.png"/> <!--הלוגו של המשחק שלכם-->
+                      <p>כדור בורח</p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout">X</a>
+            <h1>אודות</h1>
+            <p>אפיון ופיתוח: לירי שאלתיאל ושחף נחום</p>
+            <p>
+                אופיין ופותח במסגרת הקורסים
+                <br />
+                סביבות לימוד אינטראקטיביות 1
+                <br />
+                תכנות אינטראקטיבי 1
+                <br />
+                תש"פ
+            </p>
+            <a href="https://www.hit.ac.il/telem/overview" target="_blank">
+                 <img id="logoid" src="pictures/logoHIT.png" />
+            </a>
+            <p>
+                קרדיטים: <br />
+                <a href="http://soundbible.com/2067-Blop.html">soundbible- Blop sound</a> <br />
+                <a href="http://soundbible.com/1540-Computer-Error-Alert.html">soundbible- Computer error alert sound</a>
+            </p>
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay">X</a>
+            <p>כאן יכנסו התמונות/הסרטון המסביר כיצד לשחק</p>
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe id="gameIframe" src="https://liri-shaltiel.github.io/HAB_Liri_Shachaf/HAB_Liri_Shachaf.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
